@@ -243,7 +243,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSURLSessionUploadTask *)uploadTaskWithRequest:(NSURLRequest *)request
                                          fromFile:(NSURL *)fileURL
                                          progress:(NSProgress * __nullable __autoreleasing * __nullable)progress
-                                completionHandler:(nullable void (^)(NSURLResponse *response, id __nullable responseObject, NSError  * __nullable error))completionHandler;
+                                completionHandler:(nullable void (^)(NSURLResponse *response, id __nullable responseObject, NSError  * __nullable error))completionHandler NS_SWIFT_NAME(uploadTask(with:file:progress:completion:));
 
 /**
  Creates an `NSURLSessionUploadTask` with the specified request for an HTTP body.
